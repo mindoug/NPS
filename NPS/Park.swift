@@ -12,7 +12,7 @@ struct Park {
     var designation: String
     var description: String
     var state: String
-    var image: [Image]
+    var images: [Image]
     var address: [Address]
 }
 
