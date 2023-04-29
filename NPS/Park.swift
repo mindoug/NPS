@@ -13,7 +13,7 @@ struct Park {
     var description: String
     var state: String
     var images: [Image]
-    var address: [Address]
+    var addresses: [Address]
 }
 
 struct Image {
