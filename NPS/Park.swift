@@ -15,8 +15,9 @@ struct Park {
     var image: [Image]
     var address: [Address]
     
-    static func loadParkData() {
-        // testing a change...
+    static func loadParkData() -> [Park] {
+       return [
+       ]
     }
 }
 
