@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -28,7 +28,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" name="blue3"/>
+                        <color key="backgroundColor" name="dark"/>
                         <constraints>
                             <constraint firstItem="BaW-jU-qy8" firstAttribute="top" secondItem="y5v-Qo-FOZ" secondAttribute="top" id="1VR-nV-8ZA"/>
                             <constraint firstItem="BaW-jU-qy8" firstAttribute="leading" secondItem="y5v-Qo-FOZ" secondAttribute="leading" id="J5U-ni-lsD"/>
@@ -38,27 +38,28 @@
                         </constraints>
                     </view>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Lig-AT-bqp">
-                        <rect key="frame" x="8" y="228.33333333333334" width="319" height="46.666666666666657"/>
+                        <rect key="frame" x="8" y="228" width="319" height="49"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNO-uI-nk8">
-                                <rect key="frame" x="0.0" y="0.0" width="319" height="26.333333333333332"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="26.329999999999998" id="uzB-t0-XdX"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="0.0" width="319" height="20.333333333333332"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" name="lght"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhO-5b-CX9">
-                                <rect key="frame" x="0.0" y="26.333333333333314" width="319" height="20.333333333333329"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20.329999999999998" id="4Fu-Ql-0Kw"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="20.333333333333343" width="319" height="14.333333333333336"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <color key="textColor" name="lght"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vp6-U4-GjP">
+                                <rect key="frame" x="0.0" y="34.666666666666686" width="319" height="14.333333333333336"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <color key="textColor" name="lght"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </stackView>
                 </subviews>
             </view>
@@ -68,23 +69,32 @@
                 <constraint firstItem="y5v-Qo-FOZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="1Gm-Pb-lCY"/>
                 <constraint firstItem="y5v-Qo-FOZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1NC-0I-bDA"/>
                 <constraint firstAttribute="trailing" secondItem="Lig-AT-bqp" secondAttribute="trailing" constant="8" id="7H7-l4-2a9"/>
-                <constraint firstAttribute="bottom" secondItem="Lig-AT-bqp" secondAttribute="bottom" constant="10" id="Dlh-8t-mPG"/>
+                <constraint firstAttribute="bottom" secondItem="Lig-AT-bqp" secondAttribute="bottom" constant="8" id="Dlh-8t-mPG"/>
                 <constraint firstAttribute="bottom" secondItem="y5v-Qo-FOZ" secondAttribute="bottom" id="JmU-nd-jaU"/>
                 <constraint firstItem="Lig-AT-bqp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="W3h-Js-ZFg"/>
             </constraints>
             <size key="customSize" width="240" height="217"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="15"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
+                <outlet property="designationLabel" destination="rhO-5b-CX9" id="qe2-R1-iiH"/>
                 <outlet property="imageView" destination="BaW-jU-qy8" id="2Eh-l2-48g"/>
-                <outlet property="locationLabel" destination="rhO-5b-CX9" id="Mra-Ay-4DH"/>
+                <outlet property="locationLabel" destination="Vp6-U4-GjP" id="dBq-K9-Kgq"/>
                 <outlet property="parkLabel" destination="ZNO-uI-nk8" id="SCI-6N-MBK"/>
             </connections>
-            <point key="canvasLocation" x="74.045801526717554" y="77.464788732394368"/>
+            <point key="canvasLocation" x="74.045801526717554" y="77.112676056338032"/>
         </collectionViewCell>
     </objects>
     <resources>
         <image name="1pariariver" width="2048" height="1361"/>
-        <namedColor name="blue3">
-            <color red="0.13725490196078433" green="0.36078431372549019" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="dark">
+            <color red="0.24705882352941178" green="0.28627450980392155" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lght">
+            <color red="0.97254901960784312" green="0.96078431372549022" blue="0.89411764705882357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

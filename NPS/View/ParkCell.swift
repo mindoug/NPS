@@ -11,12 +11,18 @@ class ParkCell: UICollectionViewCell {
     
     @IBOutlet weak var parkLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var designationLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
-    func update(with park: Park) {
-        imageView.image = UIImage(named: "\(park.images[0].image)")
-        parkLabel.text = "\(park.name) \(park.designation)"
-        locationLabel.text = "\(park.addresses[0].city), \(park.addresses[0].state)"
+    func update(park: String, designation: String, location: String, image: String?) {
+        parkLabel.text = park
+        designationLabel.text = designation
+        locationLabel.text = location
+        if let image = image {
+            imageView.image = UIImage(named: image)
+        } else {
+            imageView.image = UIImage(systemName: Constants.placeholderImage)
+        }
     }
     
     override func awakeFromNib() {

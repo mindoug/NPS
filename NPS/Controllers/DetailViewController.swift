@@ -9,27 +9,54 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
+    enum ImageType {
+        case assetCatalog
+        case downloaded
+    }
+    
+    var imageType = ImageType.assetCatalog
+    var park: Park!
+    var image = ""
+    var name = ""
+    var category = ""
+    var location = ""
+    var parkDescription = ""
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        initialize()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func initialize() {
+//        imageView.image = UIImage(named: park.image)
+      
+        titleLabel.text = park.name
+        categoryLabel.text = park.designation
+        locationLabel.text = park.state
+        textView.text = park.description
+        
+        switch imageType {
+        case .assetCatalog:
+            imageView.image = UIImage(named: park.image)
+        case .downloaded:
+            imageView.image = UIImage(systemName: Constants.placeholderImage)
+            
+            if let imageURL = URL(string: park.image) {
+                NetworkUtilities.downloadImage(from: imageURL) { image in
+                    if let parkImage = image {
+                        // always update the UI in the main thread
+                        DispatchQueue.main.async {
+                            self.imageView.image = parkImage
+                        }
+                    }
+                }
+            }
+        }
     }
-    */
-
 }
