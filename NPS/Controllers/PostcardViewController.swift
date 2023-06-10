@@ -27,7 +27,7 @@ class PostcardViewController: UIViewController {
         mailComposer.mailComposeDelegate = self
         
         mailComposer.setSubject("Wish you were here!")
-        mailComposer.setMessageBody("An original postcard from my National Park trip", isHTML: false)
+        mailComposer.setMessageBody("Memories from my National Park trip...", isHTML: false)
         if let image = imageView.image,
            let jpegData = image.jpegData(compressionQuality: 0.9) {
             mailComposer.addAttachmentData(jpegData, mimeType: "image/jpeg", fileName: "photo.jpg")
