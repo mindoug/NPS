@@ -17,13 +17,16 @@ class ParksViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("view did load")
         initialize()
     }
     
-    // need to reload data when view appears to update heart button to reflect changes from favorites tab
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    // need to reload data when view appears to update heart button to reflect changes (deletions) from favorites tab
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         tableView.reloadData()
+        print("view will appear")
     }
     
     private func initialize() {
@@ -55,11 +58,11 @@ extension ParksViewController: FavoriteSelectable {
             let park = parks[index.row]
             // was it favorited? Add to data model.
             if selected {
-                DataModel.shared.favorites.append(park)
+                DataManager.shared.favorites.append(park)
             } else {
                 // remove the park from favorites array that matches the park at parks[index.row]
                 // removeAll function takes in a closure compares each element to the park to see if its equal. Equatable protocol required.
-                DataModel.shared.favorites.removeAll(where: {$0 == park})
+                DataManager.shared.favorites.removeAll(where: {$0 == park})
             }
         }
     }
@@ -89,7 +92,7 @@ extension ParksViewController: UITableViewDataSource {
         
         // contains method used to check to see if the park is favorited
         // Equatable required
-        if DataModel.shared.favorites.contains(park) {
+        if DataManager.shared.favorites.contains(park) {
             cell.favoriteButton.isSelected = true
         } else {
             cell.favoriteButton.isSelected = false

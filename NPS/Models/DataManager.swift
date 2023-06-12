@@ -9,7 +9,7 @@ import Foundation
 
 // need to use a class because structs are immutable
 
-class DataModel: Codable {
+class DataManager: Codable {
     
     var favorites: [Park] = [] {
         // property observer
@@ -28,7 +28,7 @@ class DataModel: Codable {
     
     // when this shared property is accessed you will always get the same instance of this class (Singleton Pattern)
     
-    static let shared = DataModel()
+    static let shared = DataManager()
     
     // the only way to initialize is to access the shared property
     // you will not be able to accidentally create a separate instance of the data model
@@ -46,7 +46,7 @@ class DataModel: Codable {
     }
     
     // read
-    private func loadFromFile() -> DataModel? {
+    private func loadFromFile() -> DataManager? {
         // get the directory where documents can be stored
         let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         // create a path to where it will be stored
@@ -54,7 +54,7 @@ class DataModel: Codable {
         
         let propertyListDecoder = PropertyListDecoder()
         if let retrievedData = try? Data(contentsOf: archiveURL) {
-            if let decodedDataModel = try? propertyListDecoder.decode(DataModel.self, from: retrievedData) {
+            if let decodedDataModel = try? propertyListDecoder.decode(DataManager.self, from: retrievedData) {
                 return decodedDataModel
             } else {
                 return nil
@@ -79,8 +79,4 @@ class DataModel: Codable {
         }
     }
 }
-
-// write data out and read data in
-// add methods for adding and removing items from array
-// modify variable to be read only
 

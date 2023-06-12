@@ -21,7 +21,7 @@
 		72893FDF2A2BA2FE00435903 /* ParksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72893FDE2A2BA2FE00435903 /* ParksViewController.swift */; };
 		72893FE12A2BA41000435903 /* ParkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72893FE02A2BA41000435903 /* ParkTableViewCell.swift */; };
 		72893FE32A2BB1B900435903 /* ParkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72893FE22A2BB1B900435903 /* ParkTableViewCell.xib */; };
-		72893FE52A2BC33000435903 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72893FE42A2BC33000435903 /* DataModel.swift */; };
+		72893FE52A2BC33000435903 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72893FE42A2BC33000435903 /* DataManager.swift */; };
 		72893FE72A2C271C00435903 /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72893FE62A2C271C00435903 /* FavoritesTableViewController.swift */; };
 		72893FE92A2C33A000435903 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72893FE82A2C33A000435903 /* ListItem.swift */; };
 		72893FEB2A2C347F00435903 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72893FEA2A2C347F00435903 /* ListTableViewController.swift */; };
@@ -55,7 +55,7 @@
 		72893FDE2A2BA2FE00435903 /* ParksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksViewController.swift; sourceTree = "<group>"; };
 		72893FE02A2BA41000435903 /* ParkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkTableViewCell.swift; sourceTree = "<group>"; };
 		72893FE22A2BB1B900435903 /* ParkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParkTableViewCell.xib; sourceTree = "<group>"; };
-		72893FE42A2BC33000435903 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		72893FE42A2BC33000435903 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		72893FE62A2C271C00435903 /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
 		72893FE82A2C33A000435903 /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 		72893FEA2A2C347F00435903 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 				72515E672A00113200DEBC5D /* Park.swift */,
 				7244A7A52A20155200830204 /* NPSPark.swift */,
 				7244A7A92A20168300830204 /* Constants.swift */,
-				72893FE42A2BC33000435903 /* DataModel.swift */,
+				72893FE42A2BC33000435903 /* DataManager.swift */,
 				72893FE82A2C33A000435903 /* ListItem.swift */,
 				72893FF02A2CE33400435903 /* NetworkUtilities.swift */,
 				72893FF22A2CE39000435903 /* NPSManager.swift */,
@@ -236,7 +236,7 @@
 			files = (
 				72893FDF2A2BA2FE00435903 /* ParksViewController.swift in Sources */,
 				7256351D29FD770400F2DA63 /* HomeViewController.swift in Sources */,
-				72893FE52A2BC33000435903 /* DataModel.swift in Sources */,
+				72893FE52A2BC33000435903 /* DataManager.swift in Sources */,
 				72893FE72A2C271C00435903 /* FavoritesTableViewController.swift in Sources */,
 				72515E682A00113200DEBC5D /* Park.swift in Sources */,
 				7256351929FD770400F2DA63 /* AppDelegate.swift in Sources */,

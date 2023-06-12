@@ -18,14 +18,14 @@ class ListTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return DataModel.shared.items.count
+        return DataManager.shared.items.count
     }
 
    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListItemCell", for: indexPath) as! ListItemCell
 
-        let item = DataModel.shared.items[indexPath.row]
+        let item = DataManager.shared.items[indexPath.row]
         cell.titleLabel?.text = item.title
         cell.isCheckedButton.isSelected = item.isChecked
         cell.delegate = self
@@ -42,7 +42,7 @@ class ListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // remove from the array, then from the table view
-            DataModel.shared.items.remove(at: indexPath.row)
+            DataManager.shared.items.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
@@ -55,8 +55,8 @@ class ListTableViewController: UITableViewController {
         let sourceViewController = segue.source as! ListDetailTableViewController
         if let listItem = sourceViewController.listItem {
             // calculate index path prior to appending record
-            let newIndexPath = IndexPath(row: DataModel.shared.items.count, section: 0)
-            DataModel.shared.items.append(listItem)
+            let newIndexPath = IndexPath(row: DataManager.shared.items.count, section: 0)
+            DataManager.shared.items.append(listItem)
             tableView.insertRows(at: [newIndexPath], with: .automatic)
         }
     }
@@ -66,9 +66,9 @@ class ListTableViewController: UITableViewController {
 extension ListTableViewController: ListItemCellDelegate {
     func checkMarkTapped(sender: ListItemCell) {
         if let indexPath = tableView.indexPath(for: sender) {
-            var listItem = DataModel.shared.items[indexPath.row]
+            var listItem = DataManager.shared.items[indexPath.row]
             listItem.isChecked.toggle()
-            DataModel.shared.items[indexPath.row] = listItem
+            DataManager.shared.items[indexPath.row] = listItem
             tableView.reloadRows(at: [indexPath], with: .automatic)
         }
     }

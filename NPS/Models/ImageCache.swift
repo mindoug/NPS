@@ -12,6 +12,5 @@ struct ImageCache {
     static var shared = ImageCache()
     let cache = NSCache<NSString, UIImage>()
     private init() {
-        
     }
 }
