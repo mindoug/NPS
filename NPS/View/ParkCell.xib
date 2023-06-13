@@ -38,22 +38,22 @@
                         </constraints>
                     </view>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Lig-AT-bqp">
-                        <rect key="frame" x="8" y="228" width="319" height="49"/>
+                        <rect key="frame" x="8" y="232.33333333333334" width="319" height="46.666666666666657"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNO-uI-nk8">
-                                <rect key="frame" x="0.0" y="0.0" width="319" height="20.333333333333332"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <rect key="frame" x="0.0" y="0.0" width="319" height="18"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <color key="textColor" name="lght"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhO-5b-CX9">
-                                <rect key="frame" x="0.0" y="20.333333333333343" width="319" height="14.333333333333336"/>
+                                <rect key="frame" x="0.0" y="18" width="319" height="14.333333333333336"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                 <color key="textColor" name="lght"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vp6-U4-GjP">
-                                <rect key="frame" x="0.0" y="34.666666666666686" width="319" height="14.333333333333336"/>
+                                <rect key="frame" x="0.0" y="32.333333333333343" width="319" height="14.333333333333336"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                 <color key="textColor" name="lght"/>
                                 <nil key="highlightedColor"/>
@@ -69,7 +69,7 @@
                 <constraint firstItem="y5v-Qo-FOZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="1Gm-Pb-lCY"/>
                 <constraint firstItem="y5v-Qo-FOZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1NC-0I-bDA"/>
                 <constraint firstAttribute="trailing" secondItem="Lig-AT-bqp" secondAttribute="trailing" constant="8" id="7H7-l4-2a9"/>
-                <constraint firstAttribute="bottom" secondItem="Lig-AT-bqp" secondAttribute="bottom" constant="8" id="Dlh-8t-mPG"/>
+                <constraint firstAttribute="bottom" secondItem="Lig-AT-bqp" secondAttribute="bottom" constant="6" id="Dlh-8t-mPG"/>
                 <constraint firstAttribute="bottom" secondItem="y5v-Qo-FOZ" secondAttribute="bottom" id="JmU-nd-jaU"/>
                 <constraint firstItem="Lig-AT-bqp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="W3h-Js-ZFg"/>
             </constraints>

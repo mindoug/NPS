@@ -137,24 +137,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="KVS-Vb-689">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="KVS-Vb-689">
                                 <rect key="frame" x="0.0" y="103" width="393" height="666"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="lght"/>
+                                <inset key="scrollIndicatorInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                 <connections>
                                     <outlet property="dataSource" destination="9Qw-ta-uab" id="KZO-aH-T7W"/>
                                     <outlet property="delegate" destination="9Qw-ta-uab" id="bcE-Ax-HGi"/>
                                 </connections>
                             </tableView>
                             <collectionView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="U9O-gG-IUH">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" name="lght"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1qL-7H-2zp">
-                                    <size key="itemSize" width="50" height="50"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="8" sectionInsetReference="safeArea" id="1qL-7H-2zp">
+                                    <size key="itemSize" width="0.0" height="0.0"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                    <inset key="sectionInset" minX="8" minY="8" maxX="8" maxY="8"/>
                                 </collectionViewFlowLayout>
                                 <cells/>
                                 <connections>
@@ -165,6 +165,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qfo-qd-Leo"/>
                         <color key="backgroundColor" name="lght"/>
+                        <constraints>
+                            <constraint firstItem="KVS-Vb-689" firstAttribute="leading" secondItem="qfo-qd-Leo" secondAttribute="leading" id="FPL-3G-XYK"/>
+                            <constraint firstItem="KVS-Vb-689" firstAttribute="top" secondItem="qfo-qd-Leo" secondAttribute="top" id="TMy-GX-xO4"/>
+                            <constraint firstItem="KVS-Vb-689" firstAttribute="trailing" secondItem="qfo-qd-Leo" secondAttribute="trailing" id="bVg-Re-594"/>
+                            <constraint firstItem="KVS-Vb-689" firstAttribute="bottom" secondItem="qfo-qd-Leo" secondAttribute="bottom" id="hli-SX-q1f"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Parks" id="5HK-PU-b0Y">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="list.bullet" catalog="system" id="Zoz-OO-IL3">
@@ -181,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QJ7-6V-bGA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4297" y="15"/>
+            <point key="canvasLocation" x="4296.9465648854957" y="14.788732394366198"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="4tJ-z0-Lx0">
@@ -191,6 +197,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="lght"/>
+                        <inset key="scrollIndicatorInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                         <connections>
                             <outlet property="dataSource" destination="qf1-iV-uz8" id="Mu1-oh-OTF"/>
                             <outlet property="delegate" destination="qf1-iV-uz8" id="8ba-Yl-ftb"/>
@@ -502,9 +509,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="pgu-94-SC1">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="pgu-94-SC1">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTI-3g-TTe">
                                 <rect key="frame" x="145.66666666666666" y="509.00000000000006" width="101.66666666666666" height="73.666666666666686"/>
@@ -566,7 +572,11 @@
                             <constraint firstItem="WcF-lw-Nlh" firstAttribute="top" secondItem="JG7-zn-ubr" secondAttribute="top" constant="50" id="8PE-HR-eHx"/>
                             <constraint firstItem="iTI-3g-TTe" firstAttribute="top" secondItem="WcF-lw-Nlh" secondAttribute="bottom" constant="50" id="9Qt-C0-gLR"/>
                             <constraint firstItem="iTI-3g-TTe" firstAttribute="centerX" secondItem="nJG-Td-Tz2" secondAttribute="centerX" id="CnU-38-i16"/>
+                            <constraint firstItem="pgu-94-SC1" firstAttribute="leading" secondItem="JG7-zn-ubr" secondAttribute="leading" id="QAe-Nb-CGi"/>
+                            <constraint firstItem="pgu-94-SC1" firstAttribute="trailing" secondItem="JG7-zn-ubr" secondAttribute="trailing" id="cMf-J0-KHz"/>
                             <constraint firstItem="WcF-lw-Nlh" firstAttribute="centerX" secondItem="nJG-Td-Tz2" secondAttribute="centerX" id="e5R-aA-4rQ"/>
+                            <constraint firstItem="pgu-94-SC1" firstAttribute="top" secondItem="nJG-Td-Tz2" secondAttribute="top" id="soa-7v-Rj5"/>
+                            <constraint firstAttribute="bottom" secondItem="pgu-94-SC1" secondAttribute="bottom" id="wJg-wi-Qwh"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Postcard" image="envelope" catalog="system" selectedImage="envelope.fill" id="aeY-Wm-oIh"/>
