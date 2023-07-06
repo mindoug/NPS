@@ -71,7 +71,7 @@ extension HomeViewController: UICollectionViewDataSource {
 
 extension HomeViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        // get planet
+       
         let park = parks[indexPath.item]
         
         performSegue(withIdentifier: "detailSegue", sender: park)

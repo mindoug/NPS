@@ -19,6 +19,7 @@ class ParksViewController: UIViewController {
         super.viewDidLoad()
         print("view did load")
         initialize()
+        
     }
     
     // need to reload data when view appears to update heart button to reflect changes (deletions) from favorites tab

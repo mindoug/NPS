@@ -16,7 +16,6 @@ class DetailViewController: UIViewController {
     
     var imageType = ImageType.assetCatalog
     var park: Park!
-
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!

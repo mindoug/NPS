@@ -509,11 +509,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="pgu-94-SC1">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trees" translatesAutoresizingMaskIntoConstraints="NO" id="pgu-94-SC1">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTI-3g-TTe">
-                                <rect key="frame" x="145.66666666666666" y="509.00000000000006" width="101.66666666666666" height="73.666666666666686"/>
+                                <rect key="frame" x="145.66666666666666" y="384" width="101.66666666666666" height="73.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="73.670000000000002" id="BfS-0c-VAd"/>
                                     <constraint firstAttribute="height" constant="73.670000000000002" id="Iwy-yA-xKt"/>
@@ -534,19 +534,19 @@
                                 <rect key="frame" x="21.666666666666657" y="109" width="350" height="350"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lzf-jC-qvj">
-                                        <rect key="frame" x="5" y="6" width="340" height="338.66666666666669"/>
+                                        <rect key="frame" x="100" y="100.99999999999999" width="150" height="148.66666666666669"/>
                                         <color key="backgroundColor" name="lght"/>
                                         <color key="tintColor" name="dark"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="340" id="6W7-9e-Hb6"/>
-                                            <constraint firstAttribute="height" constant="340" id="FRN-Yn-tOG"/>
+                                            <constraint firstAttribute="width" constant="150" id="6W7-9e-Hb6"/>
+                                            <constraint firstAttribute="height" constant="150" id="FRN-Yn-tOG"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sei-oL-QVn">
-                                        <rect key="frame" x="5" y="5" width="340" height="340"/>
+                                        <rect key="frame" x="100" y="100" width="150" height="150"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="340" id="ofz-j7-vvR"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="340" id="vPk-ne-zIf"/>
+                                            <constraint firstAttribute="height" constant="150" id="ofz-j7-vvR"/>
+                                            <constraint firstAttribute="width" constant="150" id="vPk-ne-zIf"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
@@ -555,7 +555,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" name="dark"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="Sei-oL-QVn" firstAttribute="centerY" secondItem="WcF-lw-Nlh" secondAttribute="centerY" id="2ud-L9-5bS"/>
                                     <constraint firstItem="lzf-jC-qvj" firstAttribute="centerY" secondItem="WcF-lw-Nlh" secondAttribute="centerY" id="3Qz-kQ-1oU"/>
@@ -570,7 +570,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="WcF-lw-Nlh" firstAttribute="top" secondItem="JG7-zn-ubr" secondAttribute="top" constant="50" id="8PE-HR-eHx"/>
-                            <constraint firstItem="iTI-3g-TTe" firstAttribute="top" secondItem="WcF-lw-Nlh" secondAttribute="bottom" constant="50" id="9Qt-C0-gLR"/>
+                            <constraint firstItem="iTI-3g-TTe" firstAttribute="top" secondItem="JG7-zn-ubr" secondAttribute="top" constant="325" id="9Qt-C0-gLR"/>
                             <constraint firstItem="iTI-3g-TTe" firstAttribute="centerX" secondItem="nJG-Td-Tz2" secondAttribute="centerX" id="CnU-38-i16"/>
                             <constraint firstItem="pgu-94-SC1" firstAttribute="leading" secondItem="JG7-zn-ubr" secondAttribute="leading" id="QAe-Nb-CGi"/>
                             <constraint firstItem="pgu-94-SC1" firstAttribute="trailing" secondItem="JG7-zn-ubr" secondAttribute="trailing" id="cMf-J0-KHz"/>
@@ -596,7 +596,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" id="bcH-p9-0vY">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tree" id="bcH-p9-0vY">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -763,11 +763,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="hrc-VA-wzm"/>
+        <segue reference="d6L-OK-Kg4"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="1deosai" width="1980" height="1320"/>
-        <image name="background" width="1080" height="1920"/>
         <image name="camera.circle" catalog="system" width="128" height="123"/>
         <image name="checkmark.circle.fill" catalog="system" width="128" height="123"/>
         <image name="circle" catalog="system" width="128" height="123"/>
@@ -782,8 +781,10 @@
         <image name="list.bullet.clipboard.fill" catalog="system" width="103" height="128"/>
         <image name="logo" width="399" height="196"/>
         <image name="square.and.pencil" catalog="system" width="128" height="113"/>
+        <image name="tree" width="1080" height="1920"/>
         <image name="tree" catalog="system" width="128" height="118"/>
         <image name="tree.fill" catalog="system" width="128" height="118"/>
+        <image name="trees" width="1080" height="1920"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
