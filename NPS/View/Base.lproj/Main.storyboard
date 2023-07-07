@@ -396,7 +396,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z6i-ry-jjh" userLabel="ExtraView">
                                 <rect key="frame" x="0.0" y="552" width="393" height="300"/>
-                                <color key="backgroundColor" name="medium"/>
+                                <color key="backgroundColor" name="dark"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="4Np-8D-mS7"/>
                                 </constraints>
@@ -458,7 +458,7 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" name="medium"/>
+                                <color key="backgroundColor" name="dark"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="Ghs-Cb-yTi"/>
                                     <constraint firstAttribute="trailing" secondItem="aAN-K6-r0E" secondAttribute="trailing" constant="20" id="YsJ-o7-FKd"/>
@@ -512,41 +512,23 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trees" translatesAutoresizingMaskIntoConstraints="NO" id="pgu-94-SC1">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTI-3g-TTe">
-                                <rect key="frame" x="145.66666666666666" y="384" width="101.66666666666666" height="73.666666666666686"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="73.670000000000002" id="BfS-0c-VAd"/>
-                                    <constraint firstAttribute="height" constant="73.670000000000002" id="Iwy-yA-xKt"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="101.67" id="fw9-bs-IMM"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="101.67" id="jn3-xw-KAj"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <imageReference key="image" image="square.and.pencil" catalog="system" symbolScale="large"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="50" scale="large"/>
-                                    <color key="baseForegroundColor" name="dark"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="mailButtonTapped:" destination="6F4-J2-bZF" eventType="touchUpInside" id="tEe-Fr-MOd"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WcF-lw-Nlh">
                                 <rect key="frame" x="21.666666666666657" y="109" width="350" height="350"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lzf-jC-qvj">
-                                        <rect key="frame" x="100" y="100.99999999999999" width="150" height="148.66666666666669"/>
+                                        <rect key="frame" x="20" y="26" width="310" height="298.66666666666669"/>
                                         <color key="backgroundColor" name="lght"/>
                                         <color key="tintColor" name="dark"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="6W7-9e-Hb6"/>
-                                            <constraint firstAttribute="height" constant="150" id="FRN-Yn-tOG"/>
+                                            <constraint firstAttribute="width" constant="310" id="6W7-9e-Hb6"/>
+                                            <constraint firstAttribute="height" constant="300" id="FRN-Yn-tOG"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sei-oL-QVn">
-                                        <rect key="frame" x="100" y="100" width="150" height="150"/>
+                                        <rect key="frame" x="25" y="25" width="300" height="300"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="ofz-j7-vvR"/>
-                                            <constraint firstAttribute="width" constant="150" id="vPk-ne-zIf"/>
+                                            <constraint firstAttribute="height" constant="300" id="ofz-j7-vvR"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="vPk-ne-zIf"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
@@ -565,14 +547,32 @@
                                     <constraint firstAttribute="width" constant="350" id="cI0-FM-7Ve"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTI-3g-TTe">
+                                <rect key="frame" x="145.66666666666666" y="434" width="101.66666666666666" height="73.666666666666686"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="73.670000000000002" id="BfS-0c-VAd"/>
+                                    <constraint firstAttribute="height" constant="73.670000000000002" id="Iwy-yA-xKt"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="101.67" id="fw9-bs-IMM"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="101.67" id="jn3-xw-KAj"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="square.and.pencil" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="50" scale="large"/>
+                                    <color key="baseForegroundColor" name="dark"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="mailButtonTapped:" destination="6F4-J2-bZF" eventType="touchUpInside" id="tEe-Fr-MOd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JG7-zn-ubr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="WcF-lw-Nlh" firstAttribute="top" secondItem="JG7-zn-ubr" secondAttribute="top" constant="50" id="8PE-HR-eHx"/>
-                            <constraint firstItem="iTI-3g-TTe" firstAttribute="top" secondItem="JG7-zn-ubr" secondAttribute="top" constant="325" id="9Qt-C0-gLR"/>
-                            <constraint firstItem="iTI-3g-TTe" firstAttribute="centerX" secondItem="nJG-Td-Tz2" secondAttribute="centerX" id="CnU-38-i16"/>
+                            <constraint firstItem="iTI-3g-TTe" firstAttribute="centerX" secondItem="WcF-lw-Nlh" secondAttribute="centerX" id="CnU-38-i16"/>
                             <constraint firstItem="pgu-94-SC1" firstAttribute="leading" secondItem="JG7-zn-ubr" secondAttribute="leading" id="QAe-Nb-CGi"/>
+                            <constraint firstItem="iTI-3g-TTe" firstAttribute="top" secondItem="WcF-lw-Nlh" secondAttribute="bottom" constant="-25" id="b2q-cT-Cgb"/>
                             <constraint firstItem="pgu-94-SC1" firstAttribute="trailing" secondItem="JG7-zn-ubr" secondAttribute="trailing" id="cMf-J0-KHz"/>
                             <constraint firstItem="WcF-lw-Nlh" firstAttribute="centerX" secondItem="nJG-Td-Tz2" secondAttribute="centerX" id="e5R-aA-4rQ"/>
                             <constraint firstItem="pgu-94-SC1" firstAttribute="top" secondItem="nJG-Td-Tz2" secondAttribute="top" id="soa-7v-Rj5"/>
@@ -781,8 +781,8 @@
         <image name="list.bullet.clipboard.fill" catalog="system" width="103" height="128"/>
         <image name="logo" width="399" height="196"/>
         <image name="square.and.pencil" catalog="system" width="128" height="113"/>
-        <image name="tree" width="1080" height="1920"/>
         <image name="tree" catalog="system" width="128" height="118"/>
+        <image name="tree" width="1080" height="1920"/>
         <image name="tree.fill" catalog="system" width="128" height="118"/>
         <image name="trees" width="1080" height="1920"/>
         <namedColor name="AccentColor">
@@ -796,9 +796,6 @@
         </namedColor>
         <namedColor name="lght">
             <color red="0.97254901960784312" green="0.96078431372549022" blue="0.89411764705882357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="medium">
-            <color red="0.32549019607843138" green="0.56862745098039214" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
