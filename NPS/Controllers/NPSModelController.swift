@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct NPSManager {
+struct NPSModelController {
     
     static func getParksByState(state: String, completion: @escaping (Result<[NPSPark], Error>) -> Void) {
         let query = ["stateCode": state, "api_key": Constants.apiKey]

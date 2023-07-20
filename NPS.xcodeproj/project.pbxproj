@@ -28,7 +28,7 @@
 		72893FED2A2C41D700435903 /* ListDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72893FEC2A2C41D700435903 /* ListDetailTableViewController.swift */; };
 		72893FEF2A2C47D500435903 /* ListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72893FEE2A2C47D500435903 /* ListItemCell.swift */; };
 		72893FF12A2CE33400435903 /* NetworkUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72893FF02A2CE33400435903 /* NetworkUtilities.swift */; };
-		72893FF32A2CE39000435903 /* NPSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72893FF22A2CE39000435903 /* NPSManager.swift */; };
+		72893FF32A2CE39000435903 /* NPSModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72893FF22A2CE39000435903 /* NPSModelController.swift */; };
 		72893FF52A2CE62300435903 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72893FF42A2CE62300435903 /* State.swift */; };
 		72893FF72A2D010800435903 /* PostcardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72893FF62A2D010800435903 /* PostcardViewController.swift */; };
 		72893FF92A2D0BE100435903 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72893FF82A2D0BE100435903 /* ImageCache.swift */; };
@@ -62,7 +62,7 @@
 		72893FEC2A2C41D700435903 /* ListDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailTableViewController.swift; sourceTree = "<group>"; };
 		72893FEE2A2C47D500435903 /* ListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemCell.swift; sourceTree = "<group>"; };
 		72893FF02A2CE33400435903 /* NetworkUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtilities.swift; sourceTree = "<group>"; };
-		72893FF22A2CE39000435903 /* NPSManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPSManager.swift; sourceTree = "<group>"; };
+		72893FF22A2CE39000435903 /* NPSModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPSModelController.swift; sourceTree = "<group>"; };
 		72893FF42A2CE62300435903 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		72893FF62A2D010800435903 /* PostcardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostcardViewController.swift; sourceTree = "<group>"; };
 		72893FF82A2D0BE100435903 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
@@ -83,16 +83,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		395CB7422A58AFBB003130C6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				72893FFA2A2D126800435903 /* StatesViewController.swift */,
+				7256352E29FD7FE900F2DA63 /* DetailViewController.swift */,
+				7256351C29FD770400F2DA63 /* HomeViewController.swift */,
+				72893FDE2A2BA2FE00435903 /* ParksViewController.swift */,
+				72893FE62A2C271C00435903 /* FavoritesTableViewController.swift */,
+				72893FEA2A2C347F00435903 /* ListTableViewController.swift */,
+				72893FEC2A2C41D700435903 /* ListDetailTableViewController.swift */,
+				72893FF62A2D010800435903 /* PostcardViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		55F8B92129FDA33A000C48D0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				72515E672A00113200DEBC5D /* Park.swift */,
 				7244A7A52A20155200830204 /* NPSPark.swift */,
 				7244A7A92A20168300830204 /* Constants.swift */,
-				72893FE42A2BC33000435903 /* DataManager.swift */,
 				72893FE82A2C33A000435903 /* ListItem.swift */,
-				72893FF02A2CE33400435903 /* NetworkUtilities.swift */,
-				72893FF22A2CE39000435903 /* NPSManager.swift */,
 				72893FF42A2CE62300435903 /* State.swift */,
 				72893FF82A2D0BE100435903 /* ImageCache.swift */,
 			);
@@ -121,6 +133,7 @@
 				7256351829FD770400F2DA63 /* AppDelegate.swift */,
 				7256351A29FD770400F2DA63 /* SceneDelegate.swift */,
 				55F8B92129FDA33A000C48D0 /* Models */,
+				395CB7422A58AFBB003130C6 /* ViewControllers */,
 				729B644529FDAD510018AD0D /* Controllers */,
 				729B644629FDAD680018AD0D /* View */,
 				7256352129FD770500F2DA63 /* Assets.xcassets */,
@@ -134,14 +147,9 @@
 		729B644529FDAD510018AD0D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				72893FFA2A2D126800435903 /* StatesViewController.swift */,
-				7256352E29FD7FE900F2DA63 /* DetailViewController.swift */,
-				7256351C29FD770400F2DA63 /* HomeViewController.swift */,
-				72893FDE2A2BA2FE00435903 /* ParksViewController.swift */,
-				72893FE62A2C271C00435903 /* FavoritesTableViewController.swift */,
-				72893FEA2A2C347F00435903 /* ListTableViewController.swift */,
-				72893FEC2A2C41D700435903 /* ListDetailTableViewController.swift */,
-				72893FF62A2D010800435903 /* PostcardViewController.swift */,
+				72893FF02A2CE33400435903 /* NetworkUtilities.swift */,
+				72893FE42A2BC33000435903 /* DataManager.swift */,
+				72893FF22A2CE39000435903 /* NPSModelController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -254,7 +262,7 @@
 				72893FF72A2D010800435903 /* PostcardViewController.swift in Sources */,
 				72893FE92A2C33A000435903 /* ListItem.swift in Sources */,
 				7256351B29FD770400F2DA63 /* SceneDelegate.swift in Sources */,
-				72893FF32A2CE39000435903 /* NPSManager.swift in Sources */,
+				72893FF32A2CE39000435903 /* NPSModelController.swift in Sources */,
 				729B644B29FE10A20018AD0D /* ParkCell.swift in Sources */,
 				72893FEB2A2C347F00435903 /* ListTableViewController.swift in Sources */,
 			);

@@ -27,7 +27,7 @@ class HomeViewController: UIViewController {
     
     
     func loadData(state: String) {
-        NPSManager.getParksByState(state: state) { (result) in
+        NPSModelController.getParksByState(state: state) { (result) in
             switch result {
             case .success(let returnParks):
                 // take data from returnParks and map to a new Park item
