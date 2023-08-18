@@ -539,10 +539,7 @@
                                         <color key="tintColor" name="dark"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sei-oL-QVn">
-                                        <rect key="frame" x="163" y="100" width="24" height="150"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="ofz-j7-vvR"/>
-                                        </constraints>
+                                        <rect key="frame" x="20" y="20" width="310" height="310"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
                                         <connections>
@@ -559,9 +556,13 @@
                                     <constraint firstItem="Sei-oL-QVn" firstAttribute="centerX" secondItem="WcF-lw-Nlh" secondAttribute="centerX" id="DHn-EF-jcZ"/>
                                     <constraint firstAttribute="height" constant="350" id="EDG-MO-mKt"/>
                                     <constraint firstItem="lzf-jC-qvj" firstAttribute="leading" secondItem="WcF-lw-Nlh" secondAttribute="leading" constant="20" id="Kqx-gf-Xg6"/>
+                                    <constraint firstItem="Sei-oL-QVn" firstAttribute="leading" secondItem="WcF-lw-Nlh" secondAttribute="leading" constant="20" id="OvE-mF-J61"/>
+                                    <constraint firstAttribute="trailing" secondItem="Sei-oL-QVn" secondAttribute="trailing" constant="20" id="RA6-v2-GG7"/>
+                                    <constraint firstAttribute="bottom" secondItem="Sei-oL-QVn" secondAttribute="bottom" constant="20" id="V0s-9b-yBc"/>
                                     <constraint firstAttribute="width" constant="350" id="cI0-FM-7Ve"/>
                                     <constraint firstItem="lzf-jC-qvj" firstAttribute="top" secondItem="WcF-lw-Nlh" secondAttribute="top" constant="20" id="fGO-P8-VOz"/>
                                     <constraint firstAttribute="bottom" secondItem="lzf-jC-qvj" secondAttribute="bottom" constant="20" id="gzV-tZ-tIy"/>
+                                    <constraint firstItem="Sei-oL-QVn" firstAttribute="top" secondItem="WcF-lw-Nlh" secondAttribute="top" constant="20" id="map-1d-gkX"/>
                                 </constraints>
                             </view>
                         </subviews>
