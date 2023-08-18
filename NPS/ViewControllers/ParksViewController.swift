@@ -84,7 +84,6 @@ extension ParksViewController: UITableViewDataSource {
         parks.count
     }
     
-   
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ParkTableViewCell") as! ParkTableViewCell
         
@@ -98,25 +97,23 @@ extension ParksViewController: UITableViewDataSource {
         } else {
             cell.favoriteButton.isSelected = false
         }
-        
         cell.delegate = self
-        
         return cell
     }
 }
 
 extension ParksViewController: UICollectionViewDataSource {
-   
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         parks.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ParkCell", for: indexPath) as! ParkCell
-        
+
         let park = parks[indexPath.row]
         cell.update(park: park.name, designation: park.designation, location: park.state, image: park.image)
-       
+
         return cell
     }
 }
@@ -132,8 +129,11 @@ extension ParksViewController: UICollectionViewDelegate {
 extension ParksViewController: UICollectionViewDelegateFlowLayout {
    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        print("Hello")
         // screen size minus margins / 2 to get 2 in each row
         let cellWidth = (UIScreen.main.bounds.width - 30)/2
         return CGSize(width: cellWidth, height: cellWidth)
     }
 }
+
+

@@ -27,40 +27,47 @@
                                     <constraint firstAttribute="height" constant="225" id="Kjh-Ll-ZW3"/>
                                 </constraints>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Lig-AT-bqp">
+                                <rect key="frame" x="8" y="225" width="327" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNO-uI-nk8">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="20"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                        <color key="textColor" name="lght"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhO-5b-CX9">
+                                        <rect key="frame" x="0.0" y="20" width="327" height="20"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                        <color key="textColor" name="lght"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vp6-U4-GjP">
+                                        <rect key="frame" x="0.0" y="40" width="327" height="20"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                        <color key="textColor" name="lght"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="k26-ST-d53"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" name="dark"/>
                         <constraints>
                             <constraint firstItem="BaW-jU-qy8" firstAttribute="top" secondItem="y5v-Qo-FOZ" secondAttribute="top" id="1VR-nV-8ZA"/>
+                            <constraint firstItem="Lig-AT-bqp" firstAttribute="top" secondItem="BaW-jU-qy8" secondAttribute="bottom" id="C07-yl-u6d"/>
                             <constraint firstItem="BaW-jU-qy8" firstAttribute="leading" secondItem="y5v-Qo-FOZ" secondAttribute="leading" id="J5U-ni-lsD"/>
                             <constraint firstAttribute="width" constant="335" id="TdK-Dh-CZ0"/>
+                            <constraint firstAttribute="trailing" secondItem="Lig-AT-bqp" secondAttribute="trailing" id="b52-ML-xnq"/>
                             <constraint firstAttribute="height" constant="285" id="bNZ-he-u0s"/>
+                            <constraint firstAttribute="bottom" secondItem="Lig-AT-bqp" secondAttribute="bottom" id="dBd-kc-wh2"/>
+                            <constraint firstItem="Lig-AT-bqp" firstAttribute="leading" secondItem="y5v-Qo-FOZ" secondAttribute="leading" constant="8" id="deE-ko-Q0k"/>
                             <constraint firstAttribute="trailing" secondItem="BaW-jU-qy8" secondAttribute="trailing" id="ueY-kF-Jds"/>
                         </constraints>
                     </view>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Lig-AT-bqp">
-                        <rect key="frame" x="8" y="232.33333333333334" width="319" height="46.666666666666657"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNO-uI-nk8">
-                                <rect key="frame" x="0.0" y="0.0" width="319" height="18"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                                <color key="textColor" name="lght"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhO-5b-CX9">
-                                <rect key="frame" x="0.0" y="18" width="319" height="14.333333333333336"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                <color key="textColor" name="lght"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vp6-U4-GjP">
-                                <rect key="frame" x="0.0" y="32.333333333333343" width="319" height="14.333333333333336"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                <color key="textColor" name="lght"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </stackView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
@@ -68,10 +75,7 @@
                 <constraint firstAttribute="trailing" secondItem="y5v-Qo-FOZ" secondAttribute="trailing" id="0zP-cZ-x3V"/>
                 <constraint firstItem="y5v-Qo-FOZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="1Gm-Pb-lCY"/>
                 <constraint firstItem="y5v-Qo-FOZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1NC-0I-bDA"/>
-                <constraint firstAttribute="trailing" secondItem="Lig-AT-bqp" secondAttribute="trailing" constant="8" id="7H7-l4-2a9"/>
-                <constraint firstAttribute="bottom" secondItem="Lig-AT-bqp" secondAttribute="bottom" constant="6" id="Dlh-8t-mPG"/>
                 <constraint firstAttribute="bottom" secondItem="y5v-Qo-FOZ" secondAttribute="bottom" id="JmU-nd-jaU"/>
-                <constraint firstItem="Lig-AT-bqp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="W3h-Js-ZFg"/>
             </constraints>
             <size key="customSize" width="240" height="217"/>
             <userDefinedRuntimeAttributes>

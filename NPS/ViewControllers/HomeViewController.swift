@@ -27,11 +27,17 @@ class HomeViewController: UIViewController {
     
     
     func loadData(state: String) {
-        NPSManager.getParksByState(state: state) { (result) in
+        NPSModelController.getParksByState(state: state) { (result) in
             switch result {
             case .success(let returnParks):
                 // take data from returnParks and map to a new Park item
-                self.parks = returnParks.map({Park(name: $0.name, designation: $0.designation, description: $0.description, image: $0.images[0].image, state: $0.state) })
+                self.parks = returnParks.map({Park(
+                    name: $0.name,
+                    designation: $0.designation,
+                    description: $0.description,
+                    // if no images return empty string
+                    image: $0.images.count > 0 ? $0.images[0].image : "",
+                    state: $0.state) })
                 DispatchQueue.main.async {
                     self.collectionView.reloadData()
                 }
@@ -54,17 +60,22 @@ extension HomeViewController: UICollectionViewDataSource {
         let park = parks[indexPath.row]
         cell.update(park: park.name, designation: park.designation, location: park.state, image: nil)
         
-        if let imageURL = URL(string: park.image) {
-            NetworkUtilities.downloadImage(from: imageURL) {
-                image in
-                if let parkImage = image {
-                    // always update the UI from the main thread
-                    DispatchQueue.main.async {
-                        cell.imageView.image = parkImage
+        // it's possible the park array is empty but not nil
+
+        if !park.image.isEmpty {
+            if let imageURL = URL(string: park.image) {
+                NetworkUtilities.downloadImage(from: imageURL) {
+                    image in
+                    if let parkImage = image {
+                        // always update the UI from the main thread
+                        DispatchQueue.main.async {
+                            cell.imageView.image = parkImage
+                        }
                     }
                 }
             }
         }
+        
         return cell
     }
 }
