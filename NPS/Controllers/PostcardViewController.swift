@@ -8,6 +8,7 @@
 
 import UIKit
 import MessageUI
+import SafariServices
 
 class PostcardViewController: UIViewController {
 
